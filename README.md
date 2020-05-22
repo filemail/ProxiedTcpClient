@@ -1,6 +1,8 @@
 # ProxiedTcpClient
 Easy to use TcpClient helper library that can create TcpClient connected through proxy server.
 
+[![Nuget](https://img.shields.io/nuget/v/Filemail.ProxiedTcpClient)](https://www.nuget.org/packages/Filemail.ProxiedTcpClient/)
+
 ## TcpClient factory method
 
 Automatically detects system proxy settings and creates TcpClient that uses proxy if configured in the system
