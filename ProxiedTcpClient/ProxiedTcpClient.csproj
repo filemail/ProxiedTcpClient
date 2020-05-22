@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net40;net45;netcoreapp2.0</TargetFrameworks>
+    <RootNamespace>Filemail.ProxiedTcpClient</RootNamespace>
+    <PackageId>Filemail.ProxiedTcpClient</PackageId>
+    <Authors>Filemail</Authors>
+    <Company>Filemail</Company>
+    <Copyright>Filemail</Copyright>
+    <PackageLicenseFile>README.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/filemail/ProxiedTcpClient</PackageProjectUrl>
+    <PackageIcon>logo-256.png</PackageIcon>
+    <RepositoryUrl>https://github.com/filemail/ProxiedTcpClient</RepositoryUrl>
+    <PackageTags>TcpClient proxy ProxiedTcpClient</PackageTags>
+    <PackageReleaseNotes>-</PackageReleaseNotes>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>ProxiedTcpClient.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\logo-256.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
