@@ -7,7 +7,7 @@
     <Authors>Filemail</Authors>
     <Company>Filemail</Company>
     <Copyright>Filemail</Copyright>
-    <PackageLicenseFile>README.md</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/filemail/ProxiedTcpClient</PackageProjectUrl>
     <PackageIcon>logo-256.png</PackageIcon>
     <RepositoryUrl>https://github.com/filemail/ProxiedTcpClient</RepositoryUrl>
@@ -15,6 +15,13 @@
     <PackageReleaseNotes>-</PackageReleaseNotes>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>
+      Easy to use TcpClient helper library that can create TcpClient connected through proxy server.
+      Automatically detects system proxy settings and creates TcpClient that uses proxy if configured in the system.
+
+      TcpClient client = Filemail.ProxiedTcpClient.ProxiedTcpClient.Create(destinationUri);
+    </Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -31,7 +38,7 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="..\README.md">
+    <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
