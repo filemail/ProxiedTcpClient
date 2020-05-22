@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net40;net45;net20;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net40;net45;netcoreapp2.0</TargetFrameworks>
     <RootNamespace>Filemail.ProxiedTcpClient</RootNamespace>
     <PackageId>Filemail.ProxiedTcpClient</PackageId>
     <Authors>Filemail</Authors>
