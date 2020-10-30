@@ -59,7 +59,7 @@ namespace Filemail.ProxiedTcpClient
 
             var response = ASCIIEncoding.ASCII.GetString(receiveBuffer, 0, received);
 
-            if (!response.Contains("200 OK"))
+            if (!response.Contains("200 OK", StringComparison.OrdinalIgnoreCase) && !response.Contains("200 Connection Established", StringComparison.OrdinalIgnoreCase))
             {
                 throw new Exception($"Error connecting to proxy server {destination.Host}:{destination.Port}. Response: {response}");
             }
